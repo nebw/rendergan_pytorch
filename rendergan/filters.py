@@ -1,13 +1,12 @@
+# Adapted from tetratrio: 
+# https://discuss.pytorch.org/t/is-there-anyway-to-do-gaussian-filtering-for-an-image-2d-3d-in-pytorch/12351/10
+
 import math
 import numbers
 
 import torch
 from torch import nn
 from torch.nn import functional as F
-
-
-# Adapted from tetratrio: 
-# https://discuss.pytorch.org/t/is-there-anyway-to-do-gaussian-filtering-for-an-image-2d-3d-in-pytorch/12351/10
 
 
 class GaussianSmoothing(nn.Module):
